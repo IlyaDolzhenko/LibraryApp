@@ -2,7 +2,7 @@ package com.cydeo.libraryApp.step_definitions;
 
 import com.cydeo.libraryApp.pages.BasePage;
 import com.cydeo.libraryApp.pages.LoginPage;
-import com.cydeo.libraryApp.pages.UserManagementPage;
+import com.cydeo.libraryApp.pages.UserPage;
 import com.cydeo.libraryApp.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,7 +15,7 @@ public class SearchResults_StepDef {
     LoginPage loginPage = new LoginPage();
     BasePage basePage = new BasePage();
 
-    UserManagementPage userManagementPage = new UserManagementPage();
+    UserPage userManagementPage = new UserPage();
 
     @Given("I login as a librarian")
     public void i_login_as_a_librarian() {

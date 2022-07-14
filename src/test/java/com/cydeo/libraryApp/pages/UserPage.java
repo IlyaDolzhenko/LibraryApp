@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class UserManagementPage extends BasePage{
+public class UserPage extends BasePage{
 
-    public UserManagementPage(){
+    public UserPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

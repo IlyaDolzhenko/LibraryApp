@@ -1,6 +1,6 @@
 package com.cydeo.libraryApp.step_definitions;
 
-import com.cydeo.libraryApp.pages.LibrarianMainPage;
+import com.cydeo.libraryApp.pages.MainPage;
 import com.cydeo.libraryApp.pages.LoginPage;
 import com.cydeo.libraryApp.utilities.ConfigurationReader;
 import com.cydeo.libraryApp.utilities.Driver;
@@ -12,7 +12,7 @@ import org.junit.Assert;
 public class Login_StepDef {
 
     LoginPage loginPage = new LoginPage();
-    LibrarianMainPage librarianMainPage = new LibrarianMainPage();
+    MainPage librarianMainPage = new MainPage();
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
