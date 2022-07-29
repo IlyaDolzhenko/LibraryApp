@@ -16,7 +16,6 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/libraryApp/step_definitions",
         publish = true,
-
         dryRun = false,
         tags = "@wip"
 )

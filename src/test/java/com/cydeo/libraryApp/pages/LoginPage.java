@@ -26,4 +26,8 @@ public class LoginPage extends BasePage {
         btnSignIn.click();
     }
 
+    @FindBy(xpath = "//div[text()='Sorry, Wrong Email or Password']")
+    public WebElement errorMsg;
+
+
 }
