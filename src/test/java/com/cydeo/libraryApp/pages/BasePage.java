@@ -1,6 +1,7 @@
 package com.cydeo.libraryApp.pages;
 
 import com.cydeo.libraryApp.utilities.Driver;
+import org.apache.poi.ss.formula.atp.Switch;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -37,6 +38,13 @@ public class BasePage {
     @FindBy(xpath = "//li[@class='nav-item']")
     public List<WebElement> models;
 
+        public void clickModels(String model){
+            for (WebElement element : models){
+                if (element.getText().equalsIgnoreCase(model)){
+                    element.click();
+                }
+            }
+        }
 
 
 

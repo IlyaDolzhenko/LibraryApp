@@ -1,5 +1,6 @@
 package com.cydeo.libraryApp.pages;
 
+import com.cydeo.libraryApp.utilities.ConfigurationReader;
 import com.cydeo.libraryApp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,24 @@ public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//div[text()='Sorry, Wrong Email or Password']")
     public WebElement errorMsg;
+
+    public void login(String login) {
+        switch (login) {
+            case "librarian":
+            case "Librarian":
+                inputEmail.sendKeys(ConfigurationReader.getProperty("username.librarian"));
+                inputPassword.sendKeys(ConfigurationReader.getProperty("password.librarian"));
+                btnSignIn.click();
+                break;
+
+            case "student":
+            case "Student":
+                inputEmail.sendKeys(ConfigurationReader.getProperty("student.librarian"));
+                inputPassword.sendKeys(ConfigurationReader.getProperty("student.librarian"));
+                btnSignIn.click();
+                break;
+        }
+    }
 
 
 }
